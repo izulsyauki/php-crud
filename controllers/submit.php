@@ -13,9 +13,9 @@ $handphone=$_POST['handphone'];
 $submit = mysqli_query($koneksi, "INSERT INTO data (nama, nim, handphone) VALUES ('$nama', '$nim', '$handphone')");
 
 if ($submit) {
-    echo "<script>alert('Data berhasil disimpan'); window.location.href='../index.php';</script>";
+    echo "<script>alert('Data berhasil disimpan'); window.location.href='../views/data.php';</script>";
 } else {
-    echo "<script>alert('Data gagal disimpan'); window.location.href='../index.php';</script>";
+    echo "<script>alert('Data gagal disimpan'); window.location.href='../views/index.php';</script>";
 }
 
 ?>
